@@ -1,0 +1,166 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.home-page {
+  min-height: 100vh;
+  padding: 40px 7%;
+  background: #f4f6fc;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #252641;
+}
+
+/* Welcome section */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 45px 50px;
+  border-radius: 24px;
+  color: white;
+  background: linear-gradient(120deg, #667eea, #764ba2);
+  box-shadow: 0 15px 35px rgba(102, 126, 234, 0.2);
+  overflow: hidden;
+}
+
+.small-title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  opacity: 0.85;
+}
+
+.welcome-section h1 {
+  font-size: 36px;
+  margin: 18px 0;
+}
+
+.description {
+  font-size: 16px;
+  line-height: 1.7;
+  opacity: 0.9;
+}
+
+.welcome-icon {
+  font-size: 90px;
+}
+
+/* Section heading */
+.section-heading {
+  margin: 45px 0 25px;
+}
+
+.section-heading h2 {
+  font-size: 27px;
+  margin-bottom: 8px;
+}
+
+.section-heading p {
+  color: #85869b;
+  font-size: 15px;
+}
+
+/* Service cards */
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  display: block;
+  padding: 30px;
+  text-decoration: none;
+  color: #292943;
+  background: white;
+  border: 1px solid #ebedf5;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(40, 45, 90, 0.05);
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.service-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 35px rgba(40, 45, 90, 0.12);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 17px;
+  font-size: 30px;
+  margin-bottom: 20px;
+  background: #eef0ff;
+}
+
+.calculator-card .service-icon {
+  background: #e9efff;
+}
+
+.feedback-card .service-icon {
+  background: #f6eaff;
+}
+
+.todo-card .service-icon {
+  background: #e6f8ef;
+}
+
+.profile-card .service-icon {
+  background: #fff2e5;
+}
+
+.service-card h3 {
+  font-size: 21px;
+  margin: 0 0 12px;
+}
+
+.service-card p {
+  color: #85869b;
+  line-height: 1.7;
+  font-size: 14px;
+}
+
+.service-card span {
+  display: inline-block;
+  margin-top: 15px;
+  color: #667eea;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home-page {
+    padding: 20px;
+  }
+
+  .welcome-section {
+    padding: 30px 25px;
+  }
+
+  .welcome-section h1 {
+    font-size: 27px;
+  }
+
+  .welcome-icon {
+    font-size: 55px;
+  }
+
+  .service-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .welcome-icon {
+    display: none;
+  }
+
+  .welcome-section {
+    padding: 25px 20px;
+  }
+}

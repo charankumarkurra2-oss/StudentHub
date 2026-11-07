@@ -1,0 +1,171 @@
+
+* {
+  box-sizing: border-box;
+}
+
+.sidebar {
+  width: 255px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 18px;
+  background: linear-gradient(180deg, #20264b, #171d3a);
+  color: white;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 7px 35px;
+}
+
+.brand-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: #667eea;
+  font-size: 25px;
+}
+
+.brand h2 {
+  font-size: 17px;
+  margin: 0 0 4px;
+}
+
+.brand span,
+.user-details span {
+  color: #aeb5d3;
+  font-size: 11px;
+}
+
+.menu-heading {
+  padding: 0 12px 13px;
+  color: #929bbd;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 15px;
+  border-radius: 12px;
+  color: #c6cbe0;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.nav-link:hover {
+  background: rgba(255,255,255,0.09);
+  color: white;
+}
+
+.nav-link.active {
+  color: white;
+  background: linear-gradient(110deg, #667eea, #764ba2);
+  box-shadow: 0 6px 15px rgba(102,126,234,0.25);
+}
+
+.nav-link span:first-child {
+  font-size: 19px;
+}
+
+.sidebar-footer {
+  margin-top: auto;
+  padding-top: 25px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 14px 8px;
+  border-top: 1px solid rgba(255,255,255,0.12);
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  background: #343d6c;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+.user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.user-details strong {
+  color: white;
+  font-size: 13px;
+  overflow-wrap: anywhere;
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid rgba(255,255,255,0.13);
+  border-radius: 11px;
+  color: #ffb7b7;
+  background: rgba(255,255,255,0.05);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.logout-btn:hover {
+  background: rgba(255,80,80,0.15);
+}
+
+.logout-btn span {
+  margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    min-height: auto;
+    padding: 15px;
+  }
+
+  .brand {
+    padding: 5px 5px 18px;
+  }
+
+  .menu-heading {
+    padding-bottom: 10px;
+  }
+
+  .nav-menu {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .nav-link {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .sidebar-footer {
+    margin-top: 12px;
+    padding-top: 10px;
+  }
+}

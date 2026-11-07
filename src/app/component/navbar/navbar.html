@@ -1,0 +1,71 @@
+
+<aside class="sidebar">
+
+  <div class="brand">
+    <div class="brand-icon">🎓</div>
+    <div>
+      <h2>Student Portal</h2>
+      <span>Service Dashboard</span>
+    </div>
+  </div>
+
+  <div class="menu-heading">MAIN MENU</div>
+
+  <nav class="nav-menu">
+
+    <a routerLink="/home"
+       routerLinkActive="active"
+       [routerLinkActiveOptions]="{exact: true}"
+       class="nav-link">
+      <span>🏠</span>
+      <span>Dashboard</span>
+    </a>
+
+    <a routerLink="/calculator"
+       routerLinkActive="active"
+       class="nav-link">
+      <span>🧮</span>
+      <span>Calculator</span>
+    </a>
+
+    <a routerLink="/feedback"
+       routerLinkActive="active"
+       class="nav-link">
+      <span>💬</span>
+      <span>Feedback</span>
+    </a>
+
+    <a routerLink="/todo"
+       routerLinkActive="active"
+       class="nav-link">
+      <span>✅</span>
+      <span>Task Manager</span>
+    </a>
+
+    <a routerLink="/profile"
+       routerLinkActive="active"
+       class="nav-link">
+      <span>👤</span>
+      <span>My Profile</span>
+    </a>
+
+  </nav>
+
+  <div class="sidebar-footer">
+
+    <div class="user-info">
+      <div class="user-avatar">👨‍🎓</div>
+      <div class="user-details">
+        <strong>{{ authService.getUsername() }}</strong>
+        <span>Student Account</span>
+      </div>
+    </div>
+
+    <button class="logout-btn" (click)="logout()">
+      <span>↪</span>
+      Logout
+    </button>
+
+  </div>
+
+</aside>

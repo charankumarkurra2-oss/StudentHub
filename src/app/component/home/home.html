@@ -1,0 +1,89 @@
+<div class="home-page">
+  <section class="welcome-section">
+    <div>
+      <p class="small-title">
+        STUDENT SERVICE PORTAL
+      </p>
+      <h1>
+        Welcome,
+        {{ authService.getUsername() }}! 👋
+      </h1>
+      <p class="description">
+        Manage your daily tools, share feedback,
+        and organize your tasks from one place.
+      </p>
+    </div>
+    <div class="welcome-icon">
+      🚀    </div>
+  </section>
+  <section class="section-heading">
+    <div>
+      <h2>Available Services</h2>
+      <p>
+        Choose a service to get started
+      </p>
+    </div>
+  </section>
+  <div class="service-grid">
+    <a
+      routerLink="/calculator"
+      class="service-card calculator-card"
+    >
+      <div class="service-icon">
+        🧮      </div>
+      <h3>Calculator</h3>
+      <p>
+        Perform calculations quickly
+        with calculation history.
+      </p>
+      <span>
+        Open Calculator →
+      </span>
+    </a>
+    <a
+      routerLink="/feedback"
+      class="service-card feedback-card"
+    >
+      <div class="service-icon">
+        💬
+      </div>
+      <h3>Feedback</h3>
+      <p>
+        Share your thoughts and
+        rate our service.
+      </p>
+      <span>
+        Give Feedback →
+      </span>
+    </a>
+    <a
+      routerLink="/todo"
+      class="service-card todo-card"
+    >
+      <div class="service-icon">
+        ✅      </div>
+      <h3>Task Manager</h3>
+      <p>
+        Organize your tasks and
+        track your progress.
+      </p>
+      <span>
+        Manage Tasks →
+      </span>
+    </a>
+    <a
+      routerLink="/profile"
+      class="service-card profile-card"    >
+      <div class="service-icon">
+        👤      </div>
+      <h3>My Profile</h3>
+      <p>
+        View your account and
+        application information.
+      </p>
+      <span>
+        View Profile →
+      </span>
+    </a>
+  </div>
+</div>
